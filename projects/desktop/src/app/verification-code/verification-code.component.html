@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-header>
+        <h2>Welcome to Public Transport App!</h2>
+    </mat-card-header>
+    <br>
+    <mat-card-content>
+        <h4>We just send a confirmation code over to <strong>your mail</strong>.</h4>
+        <form class="example-form"  (ngSubmit)="proceedVerification()">
+            <mat-form-field class="example-full-width">
+              <mat-label>Verification Code</mat-label>
+              <input matInput formControlName="verificationCode">
+            </mat-form-field>
+            <div>
+                <button mat-raised-button color="primary">Submit</button>
+            </div>
+        </form>        
+    </mat-card-content>
+</mat-card>
